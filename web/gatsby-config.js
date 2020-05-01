@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Gatsby Sanity Portfolio`,
+    description: `A Gatbsy portfolio site with Sanity.io as a headless CMS.`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -9,11 +9,8 @@ module.exports = {
     {
       resolve: "gatsby-source-sanity",
       options: {
-        projectId: "tp282hly",
-        dataset: "demo",
-        // a token with read permissions is required
-        // if you have a private dataset
-        token: process.env.MY_SANITY_TOKEN,
+        projectId: "jldh7tlj",
+        dataset: "production",
       },
     },
     {
