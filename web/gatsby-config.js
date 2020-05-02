@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Sanity Portfolio`,
     description: `A Gatbsy portfolio site with Sanity.io as a headless CMS.`,
-    author: `@gatsbyjs`,
+    author: `Ger Hynes`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
