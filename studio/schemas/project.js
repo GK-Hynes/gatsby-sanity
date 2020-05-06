@@ -38,5 +38,18 @@ export default {
     },
   ],
 
-  // TODO add preview
+  preview: {
+    select: {
+      title: "title",
+      author: "author.name",
+      media: "image",
+    },
+    prepare(selection) {
+      const { author } = selection;
+      return {
+        ...selection,
+        subtitle: author && `by ${author}`,
+      };
+    },
+  },
 };
