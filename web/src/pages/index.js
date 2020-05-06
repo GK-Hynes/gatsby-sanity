@@ -31,13 +31,31 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <h1>My Portfolio</h1>
-    <ul style={{ listStyle: `none` }}>
+    <ul
+      style={{
+        listStyle: "none",
+        display: "flex",
+        flexWrap: "wrap",
+        alignItems: "space-between",
+        padding: 0,
+      }}
+    >
       {data.allSanityProject.edges.map(({ node: project }) => (
-        <li key={project.slug.current}>
-          <h2>{project.title}</h2>
+        <li
+          key={project.slug.current}
+          style={{
+            flex: "1 45%",
+            flexWrap: "wrap",
+            maxWidth: "45%",
+            margin: "1rem",
+          }}
+        >
+          <h2 style={{ fontSize: "24px" }}>
+            <Link to={project.slug.current}>{project.title}</Link>
+          </h2>
           <Image fluid={project.image.asset.fluid} alt={project.title} />
-          <p>{project.description}</p>
-          {/* TODO add local link */}
+          <p style={{ marginTop: "1rem" }}>{project.description}</p>
+          <Link to={project.slug.current}>See project details</Link>
         </li>
       ))}
     </ul>

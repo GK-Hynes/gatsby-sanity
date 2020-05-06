@@ -11,6 +11,10 @@ module.exports = {
       options: {
         projectId: "jldh7tlj",
         dataset: "production",
+        overlayDrafts: true,
+        watchMode: true,
+        token:
+          "sk7Pf9dycJPwlNl8zqkRRfW1ddRZfcMvgEfMH6R3xiJiEZupVoQXB7mHu4TXvnTDviwu1aWTcCG18TtokPdNLM7kbg05ZqjEUam4qe4yP1zYdtfieuCOjPUoM8dJiy8DAvLAzadSwBzdeiodwUxs2AKgB8hu9uJn5Uzmq7oyp5Z7tSmLJmON",
       },
     },
     {
